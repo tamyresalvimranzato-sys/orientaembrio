@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orienta Embrio - Curso de Reprodução Humana e Embriologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'oe-light': '#EFF6FF',
+                        'oe-medium': '#3B82F6',
+                        'oe-dark': '#1E3A8A',
+                        'oe-accent': '#DBEAFE',
+                        'oe-beige': '#FDFBF7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .smooth-shadow {
+            box-shadow: 0 10px 40px -10px rgba(30, 58, 138, 0.08);
+        }
+        .bg-gradient-oe {
+            background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700 antialiased selection:bg-oe-medium selection:text-white">
+
+    <!-- HEADER / LOGO -->
+    <header class="w-full py-6 flex justify-center items-center bg-white shadow-sm sticky top-0 z-50">
+        <img src="6.png" alt="Orienta Embrio Logo" class="h-16 md:h-20 object-contain">
+    </header>
+
+    <!-- 1. HERO -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-oe-beige">
+        <div class="container mx-auto px-6 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-oe-accent text-oe-dark text-xs font-semibold tracking-widest mb-6">
+                    <span>PRÁTICA</span> &bull; <span>LABORATÓRIO</span> &bull; <span>REPRODUÇÃO HUMANA</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-oe-dark leading-tight mb-6">
+                    Aprenda, na prática, como funciona a rotina de um laboratório de Reprodução Humana.
+                </h1>
+                <p class="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0">
+                    Se você quer aprender, na prática, como funciona a rotina de um laboratório de Reprodução Humana, esse curso é para você. 🤎
+                </p>
+                <a href="#cadastro" class="inline-block bg-oe-medium text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-oe-dark hover:shadow-xl transition-all transform hover:-translate-y-1 text-lg">
+                    QUERO PARTICIPAR
+                </a>
+                
+                <div class="mt-12 flex justify-center lg:justify-start gap-6 opacity-70 text-sm font-medium text-oe-dark">
+                    <span class="flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg> Microscopia</span>
+                    <span class="flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg> Embriologia</span>
+                    <span class="flex items-center gap-2"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg> Andrologia</span>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-oe-medium rounded-3xl transform translate-x-4 translate-y-4 opacity-20"></div>
+                    <img src="1.jpeg" alt="Prática no Laboratório" class="rounded-3xl shadow-2xl relative z-10 w-full h-[500px] object-cover object-center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. QUEM ESTÁ POR TRÁS -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="w-full lg:w-1/2 order-2 lg:order-1 relative">
+                    <img src="2.jpeg" alt="Andressa Leal e Tamyres Ranzato" class="rounded-3xl shadow-2xl w-full h-auto object-cover">
+                    <!-- Badges -->
+                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl smooth-shadow flex flex-col gap-3">
+                        <div class="flex items-center gap-3 bg-oe-light text-oe-dark px-4 py-2 rounded-xl font-bold">
+                            <span class="text-2xl">+200</span>
+                            <span class="text-xs uppercase leading-tight">Alunos<br>Guiados</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-oe-medium text-white px-4 py-2 rounded-xl font-bold">
+                            <span class="text-xl">★</span>
+                            <span class="text-xs uppercase leading-tight">Experiência<br>Prática</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 order-1 lg:order-2">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-oe-dark mb-4">Quem está por trás dessa experiência?</h2>
+                    <h3 class="text-xl text-oe-medium font-semibold mb-6">Andressa Leal e Tamyres Ranzato</h3>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-widest mb-6">Embriologistas Sênior | Co-fundadoras Orienta Embrio</p>
+                    
+                    <div class="border-l-4 border-oe-medium pl-6 py-2 mb-8">
+                        <p class="text-2xl text-gray-800 font-medium italic">
+                            "Mentoria para te levar ao laboratório de FIV."
+                        </p>
+                    </div>
+                    
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Mais de 200 alunos já foram guiados por nós rumo a uma carreira sólida e de sucesso na área de Reprodução Humana. Compartilhamos nossa vivência diária para encurtar o seu caminho.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. PARA QUEM É O CURSO -->
+    <section class="py-20 bg-oe-light">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-oe-dark mb-6">Esse curso é para você que quer entrar na Reprodução Humana.</h2>
+            <p class="text-lg text-gray-600 mb-16 max-w-3xl mx-auto">
+                O curso é destinado para todos estudantes de graduação e para aqueles que desejam entrar na área de Reprodução Humana Assistida.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-10 rounded-3xl smooth-shadow transform transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-oe-accent rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">🎓</div>
+                    <h3 class="text-xl font-bold text-oe-dark mb-4">Estudantes</h3>
+                    <p class="text-gray-600">Para estudantes de graduação que desejam conhecer a rotina e os fundamentos da embriologia.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-10 rounded-3xl smooth-shadow transform transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-oe-accent rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">🔬</div>
+                    <h3 class="text-xl font-bold text-oe-dark mb-4">Iniciantes na Área</h3>
+                    <p class="text-gray-600">Para quem deseja dar os primeiros passos no laboratório de Reprodução Humana.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-10 rounded-3xl smooth-shadow transform transition hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-oe-accent rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">👩🏻‍🔬</div>
+                    <h3 class="text-xl font-bold text-oe-dark mb-4">Profissionais Início</h3>
+                    <p class="text-gray-600">Para profissionais que estão começando na área e desejam ampliar seus conhecimentos práticos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. DATA E IMERSÃO -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col items-center text-center mb-16">
+                <div class="text-7xl md:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-oe-medium to-oe-dark opacity-10 mb-4 absolute top-10">31 OUT</div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-oe-dark mt-8 mb-4">31 DE OUTUBRO</h2>
+                <h3 class="text-2xl text-oe-medium font-medium mb-6">Um dia de imersão prática em Embriologia.</h3>
+                <p class="text-lg text-gray-600 max-w-2xl">
+                    No dia 31/10, vamos mergulhar em duas práticas fundamentais para quem está começando na embriologia:
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="border border-oe-accent rounded-3xl p-8 flex gap-6 items-start bg-oe-beige">
+                    <div class="text-4xl">🧪</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-oe-dark mb-2">Espermograma</h4>
+                        <p class="text-gray-600">Espermograma + capacitação espermática por swim-up.</p>
+                    </div>
+                </div>
+                <div class="border border-oe-accent rounded-3xl p-8 flex gap-6 items-start bg-oe-beige">
+                    <div class="text-4xl">🔬</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-oe-dark mb-2">Técnicas Básicas de FIV</h4>
+                        <p class="text-gray-600">Conheça fundamentos e técnicas laboratoriais essenciais para quem está começando na área.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TEORIA + PRÁTICA -->
+    <section class="py-20 bg-oe-dark text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">Conhecimento que sai da teoria e vai para a bancada.</h2>
+                <p class="text-lg text-blue-100 max-w-3xl mx-auto">
+                    A proposta é unir conhecimento teórico e prática de bancada, com uma experiência pensada para quem quer entender não apenas o “como fazer”, mas também os fundamentos por trás de cada etapa.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-16">
+                <div class="p-8 rounded-3xl bg-white/10 backdrop-blur border border-white/20">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="text-xl font-bold mb-2">Teoria</h3>
+                    <p class="text-blue-100 text-sm">Conteúdo on-line, para você assistir no seu ritmo.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/10 backdrop-blur border border-white/20">
+                    <div class="text-4xl mb-4">👩🏻‍🔬</div>
+                    <h3 class="text-xl font-bold mb-2">Prática</h3>
+                    <p class="text-blue-100 text-sm">8 horas presenciais de experiência em laboratório.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-white/10 backdrop-blur border border-white/20">
+                    <div class="text-4xl mb-4">📜</div>
+                    <h3 class="text-xl font-bold mb-2">Certificado</h3>
+                    <p class="text-blue-100 text-sm">Certificado de participação no curso.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-6">
+                <div class="w-full bg-oe-medium rounded-2xl py-6 px-4 text-center transform shadow-2xl">
+                    <h3 class="text-2xl md:text-3xl font-extrabold tracking-widest">8 HORAS DE EXPERIÊNCIA PRESENCIAL</h3>
+                </div>
+                <div class="w-full max-w-3xl bg-white/10 backdrop-blur border border-white/20 rounded-2xl py-5 px-6 text-center shadow-lg">
+                    <p class="text-lg font-medium text-white mb-1">
+                        <span class="font-bold uppercase tracking-wider text-sm block mb-2 text-blue-300">📍 Local do curso</span>
+                        O Centro Metropolitano, Barra da Tijuca - RJ
+                    </p>
+                    <p class="text-blue-100 text-sm">
+                        Av. Ator José Wilker, 605, Torre South América, salas 779/780/781 - Barra Olímpica
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. GALERIA -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-oe-dark mb-4">Uma experiência pensada para quem quer viver a rotina do laboratório.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative group rounded-3xl overflow-hidden shadow-lg h-80">
+                    <img src="3.jpeg" alt="Laboratório e Equipamentos" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-oe-dark/80 to-transparent flex items-end justify-center pb-6">
+                        <span class="text-white font-bold tracking-widest uppercase">Conhecimento</span>
+                    </div>
+                </div>
+                <div class="relative group rounded-3xl overflow-hidden shadow-lg h-80">
+                    <img src="4.png" alt="Aula Prática 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-oe-dark/80 to-transparent flex items-end justify-center pb-6">
+                        <span class="text-white font-bold tracking-widest uppercase">Prática</span>
+                    </div>
+                </div>
+                <div class="relative group rounded-3xl overflow-hidden shadow-lg h-80">
+                    <img src="5.png" alt="Aula Prática 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-oe-dark/80 to-transparent flex items-end justify-center pb-6">
+                        <span class="text-white font-bold tracking-widest uppercase">Experiência</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. O QUE VOCÊ VAI APRENDER -->
+    <section class="py-20 bg-oe-light">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl lg:text-4xl font-bold text-oe-dark text-center mb-8">O que você vai vivenciar durante a prática?</h2>
+            <p class="text-lg text-gray-600 text-center mb-12">
+                Durante a prática, vamos abordar desde o uso do microscópio e preparo das amostras até técnicas de pipetagem, preparo de placas e materiais, capacitação espermática e fundamentos de técnicas laboratoriais de FIV.
+            </p>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 smooth-shadow">
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg text-oe-dark font-medium">
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Uso do microscópio</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Preparo de amostras</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Técnicas de pipetagem</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Preparo de placas</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Preparo de materiais</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Capacitação espermática</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Capacitação espermática (Swim-up)</li>
+                    <li class="flex items-center gap-3"><span class="text-oe-medium text-2xl">✓</span> Fundamentos de técnicas de FIV</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. VAGAS LIMITADAS -->
+    <section class="py-24 bg-gradient-oe text-center text-white px-6">
+        <h2 class="text-4xl lg:text-5xl font-extrabold mb-6 flex justify-center items-center gap-4">
+            <span class="text-yellow-300">⚠️</span> Vagas limitadas!
+        </h2>
+        <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-10">
+            Se você quer dar os primeiros passos na bancada e transformar conhecimento em prática, esse curso foi feito para você.
+        </p>
+        <a href="#cadastro" class="inline-block bg-white text-oe-dark font-bold px-10 py-5 rounded-full shadow-2xl hover:bg-oe-light hover:shadow-xl transition-all transform hover:-translate-y-1 text-lg uppercase tracking-wide">
+            QUERO GARANTIR MINHA VAGA
+        </a>
+    </section>
+
+    <!-- 9 & 10. FORMULÁRIO DE CADASTRO -->
+    <section id="cadastro" class="py-20 bg-oe-beige">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-oe-dark mb-4">Faça seu cadastro</h2>
+                <p class="text-gray-600">Preencha seus dados e escolha a modalidade de interesse.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 smooth-shadow">
+                <form id="registroForm" class="space-y-6">
+                    <h3 class="text-xl font-bold text-oe-medium border-b pb-2 mb-6">DADOS PESSOAIS</h3>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">Nome completo</label>
+                        <input type="text" id="nome" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-oe-medium focus:border-oe-medium outline-none transition bg-gray-50">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Idade</label>
+                            <input type="number" id="idade" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-oe-medium focus:border-oe-medium outline-none transition bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-oe-medium focus:border-oe-medium outline-none transition bg-gray-50">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">Cidade</label>
+                            <input type="text" id="cidade" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-oe-medium focus:border-oe-medium outline-none transition bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-2">E-mail</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-oe-medium focus:border-oe-medium outline-none transition bg-gray-50">
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-oe-medium border-b pb-2 mt-10 mb-6">MODALIDADE DE INTERESSE</h3>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-4">Qual modalidade você deseja realizar?</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-oe-light transition">
+                                <input type="radio" name="modalidade" value="Espermograma" required class="w-5 h-5 text-oe-medium focus:ring-oe-medium">
+                                <span class="text-gray-700 font-medium">🧪 Espermograma + Capacitação Espermática por Swim-up</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 border border-gray-200 rounded-xl cursor-pointer hover:bg-oe-light transition">
+                                <input type="radio" name="modalidade" value="Tecnicas Basicas FIV" required class="w-5 h-5 text-oe-medium focus:ring-oe-medium">
+                                <span class="text-gray-700 font-medium">🔬 Técnicas Básicas de FIV</span>
+                            </label>
+                            <label class="flex items-center gap-3 p-4 border border-oe-medium bg-oe-light rounded-xl cursor-pointer hover:bg-blue-100 transition shadow-sm">
+                                <input type="radio" name="modalidade" value="Pacote Completo" required class="w-5 h-5 text-oe-medium focus:ring-oe-medium">
+                                <span class="text-oe-dark font-bold">⭐ Pacote — Espermograma + Técnicas Básicas de FIV</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <button type="submit" class="w-full btn-primary text-lg font-bold py-4 rounded-xl shadow-lg">
+                            ENVIAR CADASTRO
+                        </button>
+                    </div>
+                </form>
+
+                <div id="mensagemSucesso" class="hidden mt-8 p-6 bg-green-50 border border-green-200 rounded-2xl text-center">
+                    <h4 class="text-2xl font-bold text-green-700 mb-2">Cadastro enviado com sucesso! 💙</h4>
+                    <p class="text-green-800">Agora você pode finalizar sua inscrição escolhendo a modalidade correspondente abaixo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. ÁREA DE PAGAMENTO -->
+    <section id="pagamento" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-oe-dark mb-4">Escolha sua modalidade</h2>
+                <p class="text-lg text-gray-600">Escolha a experiência que mais combina com o seu momento profissional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+                
+                <!-- CARD 1 -->
+                <div class="border border-gray-200 rounded-3xl p-8 text-center hover:shadow-2xl transition duration-300 bg-white flex flex-col h-full">
+                    <div class="text-5xl mb-6">🧪</div>
+                    <h3 class="text-2xl font-bold text-oe-dark mb-4">ESPERMOGRAMA</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">Espermograma + capacitação espermática por swim-up</p>
+                    <a href="https://loja.infinitepay.io/orientaembrio26/tss2696-espermograma" target="_blank" class="block w-full border-2 border-oe-medium text-oe-medium font-bold py-3 rounded-full hover:bg-oe-medium hover:text-white transition">
+                        QUERO ESSA EXPERIÊNCIA
+                    </a>
+                </div>
+
+                <!-- CARD 3 (PACOTE COMPLETO) - DESTAQUE NO MEIO -->
+                <div class="border-2 border-oe-medium rounded-3xl p-8 text-center shadow-2xl bg-oe-light transform lg:scale-105 flex flex-col h-full relative">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-oe-dark text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest flex items-center gap-2 shadow-md">
+                        ⭐ MELHOR OPÇÃO
+                    </div>
+                    <div class="text-5xl mb-6 mt-4">🔬 + 🧪</div>
+                    <h3 class="text-3xl font-extrabold text-oe-dark mb-4">PACOTE COMPLETO</h3>
+                    <p class="text-gray-700 mb-8 font-medium flex-grow">Espermograma + Técnicas Básicas de FIV</p>
+                    <a href="https://loja.infinitepay.io/orientaembrio26/qot7899-pacote-espermograma-tecnicas-basicas" target="_blank" class="block w-full bg-oe-medium text-white font-bold py-4 rounded-full shadow-lg hover:bg-oe-dark hover:shadow-xl transition transform hover:-translate-y-1">
+                        QUERO O PACOTE COMPLETO
+                    </a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="border border-gray-200 rounded-3xl p-8 text-center hover:shadow-2xl transition duration-300 bg-white flex flex-col h-full">
+                    <div class="text-5xl mb-6">🔬</div>
+                    <h3 class="text-2xl font-bold text-oe-dark mb-4">TÉCNICAS BÁSICAS DE FIV</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">Conheça fundamentos e técnicas básicas de FIV na prática.</p>
+                    <a href="https://loja.infinitepay.io/orientaembrio26/wrk2162-tecnicas-basicas-de-fiv" target="_blank" class="block w-full border-2 border-oe-medium text-oe-medium font-bold py-3 rounded-full hover:bg-oe-medium hover:text-white transition">
+                        QUERO ESSA EXPERIÊNCIA
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. CHAMADA FINAL -->
+    <section class="py-24 relative overflow-hidden flex items-center justify-center">
+        <!-- Background Image overlay -->
+        <div class="absolute inset-0">
+            <img src="1.jpeg" class="w-full h-full object-cover opacity-20 filter blur-sm" alt="Background">
+            <div class="absolute inset-0 bg-oe-dark opacity-90"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">Seu primeiro passo na bancada pode começar aqui.</h2>
+            <p class="text-xl text-blue-100 max-w-2xl mx-auto mb-10">
+                Transforme conhecimento em experiência e comece a construir sua trajetória na Reprodução Humana Assistida.
+            </p>
+            <a href="#cadastro" class="inline-block bg-white text-oe-dark font-bold px-10 py-5 rounded-full shadow-2xl hover:bg-oe-light transition-all transform hover:-translate-y-1 text-lg">
+                QUERO PARTICIPAR
+            </a>
+        </div>
+    </section>
+
+    <!-- 13. INSTAGRAM -->
+    <section class="py-12 bg-white border-t border-gray-100 text-center">
+        <div class="container mx-auto px-6">
+            <h4 class="text-lg font-semibold text-gray-500 mb-6 uppercase tracking-widest">Acompanhe a Orienta Embrio</h4>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://instagram.com/orientaembrio" target="_blank" class="flex items-center gap-2 text-oe-medium font-medium hover:text-oe-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    @orientaembrio
+                </a>
+                <a href="https://instagram.com/tamyresranzato" target="_blank" class="flex items-center gap-2 text-oe-medium font-medium hover:text-oe-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    @tamyresranzato
+                </a>
+                <a href="https://instagram.com/fertilidade_emfoco" target="_blank" class="flex items-center gap-2 text-oe-medium font-medium hover:text-oe-dark transition">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    @fertilidade_emfoco
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. RODAPÉ -->
+    <footer class="bg-oe-dark text-white py-12 text-center">
+        <div class="container mx-auto px-6">
+            <h4 class="text-2xl font-bold mb-2">Orienta Embrio</h4>
+            <p class="text-blue-200 text-sm mb-6 uppercase tracking-wider">Mentoria e formação prática em Reprodução Humana Assistida</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-blue-100">
+                <p>Instagram: <a href="https://instagram.com/orientaembrio" class="font-bold hover:text-white transition">@orientaembrio</a></p>
+                <span class="hidden md:inline">&bull;</span>
+                <p>E-mail: <a href="mailto:rhamentoriaespecializada@gmail.com" class="font-bold hover:text-white transition">rhamentoriaespecializada@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DO FORMULÁRIO -->
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Pega os dados para estruturar o mailto
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            const telefone = document.getElementById('telefone').value;
+            const cidade = document.getElementById('cidade').value;
+            const email = document.getElementById('email').value;
+            const modalidade = document.querySelector('input[name="modalidade"]:checked').value;
+            
+            const body = `NOVO CADASTRO - CURSO PRATICO%0D%0A%0D%0ANome: ${nome}%0D%0AIdade: ${idade}%0D%0ATelefone: ${telefone}%0D%0ACidade: ${cidade}%0D%0AEmail: ${email}%0D%0AModalidade Escolhida: ${modalidade}`;
+            
+            // Abre o cliente de email do usuário
+            window.location.href = `mailto:rhamentoriaespecializada@gmail.com?subject=Cadastro Curso Orienta Embrio - ${nome}&body=${body}`;
+            
+            // Mostra a mensagem de sucesso e rola para pagamento
+            document.getElementById('mensagemSucesso').classList.remove('hidden');
+            setTimeout(() => {
+                document.getElementById('pagamento').scrollIntoView({ behavior: 'smooth' });
+            }, 1000);
+            
+            // Limpa form (opcional)
+            this.reset();
+        });
+    </script>
+</body>
+</html>
